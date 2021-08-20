@@ -1,0 +1,156 @@
+body {
+	font-family: Roboto;
+}
+
+.page{
+	margin-top: 30px;	
+  	margin-left: 150px;
+}
+
+.form {
+  display: flex;
+  width: 850px;
+  font-size: 19px;
+}
+
+.form .section {
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.form .section .control-group {
+  margin-top: 10px;
+}
+
+.form .section .control-group .control {
+  width: 100%;
+}
+
+
+.form .section .control-group .control-label {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.btnSalvar {
+	margin-top: 6% !important;
+	padding-left: 75%;
+	padding-top: 5%;
+}
+
+button {
+	background-color: #28a745;
+	color: white;
+	border-radius: 4px;
+	border: none;
+	font-size: 16px;
+	padding: 10px;
+	text-align: center;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #218838;
+}
+.btn-danger {
+	margin-left: 5px;
+	background-color: #dc3545 !important;
+	padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+.btn-info {
+	background-color: #17a2b8;
+	padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+.btn-info:hover {
+	background-color: #138496 !important;
+}
+input {
+	height: 30px !important;
+	border-radius: 8px;
+	border: 1px solid;
+}
+.selecionarGrupo {
+  height: 30px !important;
+	border-radius: 8px;
+	border: 1px solid;
+}
+
+.validaCampo {
+	color: #d41313;
+}
+
+.menu{
+	font-size: 20px;
+	list-style:none;
+	float:left;
+	padding: 20px 0px 20px 0px;
+	background: #343a40;
+	margin: -30px 0px 20px -10px;
+	width: 100%;
+}
+.menu li{
+	position:relative;
+	float:left;
+}
+.menu li a{
+	background: #343a40;
+	color:white; 
+	text-decoration:none; 
+	padding:5px 10px; 
+	display:block;
+}
+
+.menu li a:hover{
+	background:#333;
+	color:#fff;
+	-moz-box-shadow:0 3px 10px 0 #CCC;
+	-webkit-box-shadow:0 3px 10px 0 #ccc;
+	text-shadow:0px 0px 5px #fff;
+}
+
+.floatRight {
+	float: right;
+	margin: 30px 250px 0px 0px;
+}
+
+.floatLeft {
+	float: left;
+	margin-left: 150px;
+}
+
+.thead th {
+	padding: 16px 24px 16px 24px;
+  	text-align: center;
+  	margin: 0;
+  	border-bottom: 1px solid #ccc;
+  	border-top: 1px solid #ccc;
+}
+
+td {
+	padding: 16px 24px 16px 24px;
+  	text-align: center;
+  	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

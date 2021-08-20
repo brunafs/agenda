@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="utf-8" >
+	<link rel="stylesheet" href="../resources/css/styles.css">
+</head>
+<body onload="listarGrupos()">
+	<nav class="navMenu">
+		<ul class="menu">
+			<li><a href="#"  style="margin-left: 15px; font-size: 24px">Hepta</a></li>
+			<li><a href="../index.html">Agenda</a></li>
+			<li><a href="grupos.html">Grupos</a></li>
+		</ul>
+	</nav>
+	<div style="margin-top: 30px;">  
+		<div style="width: 100%; height: 160px">
+		    <div class="floatLeft">
+		    	<h1>Grupos</h1>	
+		    </div>	    
+		    <div class="floatRight">
+		      <a href="cadastrarGrupos.html">
+		      		<button type="button" class="btn btn-success">Cadastrar</button>
+		        </a>
+		    </div>
+	    </div>
+	  
+		<div style="margin-left: 140px;">
+				<table class="table">
+			  		<thead class="thead">
+				    	<tr>
+					      <th scope="col">#</th>
+					      <th scope="col">Nome</th>
+					      <th scope="col"></th>
+				    	</tr>
+				  </thead>
+			  	  <tbody id="tabelaGrupos"></tbody>
+				</table>
+		</div>
+	</div>	
+   <script src="../resources/js/script.js"></script>
+</body>
+</html>

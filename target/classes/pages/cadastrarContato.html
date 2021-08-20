@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<meta charset="utf-8" >
+	<link rel="stylesheet" href="../resources/css/styles.css">
+</head>
+
+<body onload="verifica()">
+	<div class="page" >
+		<div> 
+			<h1>Contato</h1>
+		</div>
+		<form class="form">
+		  <div class="section">
+		    <div class="control-group">
+		    	<div id="id-edicao" hidden>
+        			<input class="campo-formulario" type="text" name="id" id="id" disabled>
+      			</div>
+		      <label class="control-label">Nome</label>
+		      <input type="text" class="control" id="nome" required/>
+		      <span hidden id="errorNome" class="validaCampo">Campo obrigatório</span>
+		    </div>
+		    <div class="control-group">
+		      <label class="control-label">E-mail</label>
+		      <input type="text" class="control" id="email" required/>
+		      <span hidden id="errorEmail" class="validaCampo">Campo obrigatório</span>
+		    </div>
+		    <div class="control-group" >
+		      <label class="control-label">Grupo</label>
+		      <select class="control selecionarGrupo" id="selectGrupos">
+		            <option value="">Selecione...</option>
+		      </select>
+		      <span hidden id="errorGrupo" class="validaCampo">Campo obrigatório</span>
+		    </div>
+		    <div class="control-group">
+		    <label class="control-label">Foto</label>
+		    <div id="foto">
+		    	<button hidden type="button" class="btn btn-info"  id="btnAlterarAvatar" style="margin-bottom: 10px" onclick="editarArquivo()">Alterar</button>
+		     	<input type="file"  class="control" id="avatar" />
+		      	<span hidden id="errorAvatar" class="validaCampo">Campo obrigatório</span>
+		    </div>
+		  </div>
+		  </div>		
+		  <div class="section">
+		    <div class="control-group">
+		      <label class="control-label">Sobrenome</label>
+		      <input type="text" class="control" id="nomeCompleto"/>
+		    </div>
+		    <div class="control-group">
+		      <label class="control-label">Telefone</label>
+		      <input type="text" class="control" id="telefone" maxlength="15" required />
+		      <span hidden id="errorTelefone" class="validaCampo">Campo obrigatório</span>
+		    </div>
+		    <div class="control-group">
+		      <label class="control-label">Data de nascimento</label>
+		      <input type="date" class="control" id="dataNascimento" required />
+		      <span hidden id="errorDtNascimento" class="validaCampo">Campo obrigatório</span>
+		    </div>
+		    <div class="control-group btnSalvar">
+		      <a href="cadastrarContato.html">
+		    	<button type="button" class="btn btn-success" id="btnSalvar" onclick="novoContato()">Cadastrar</button>
+		    	<button type="button" class="btn btn-success" hidden id="btnEditar" onclick="editarContato()">Editar</button>
+		    </a>
+		    </div>
+		
+		  </div>
+		</form>
+	</div>
+  	
+  	<script src="../resources/js/script.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta charset="utf-8" >
+	<link rel="stylesheet" href="../resources/css/styles.css">
+</head>
+<body onload="verificaGrupo()">
+	<nav class="navMenu">
+		<ul class="menu">
+			<li><a href="#">Hepta</a></li>
+			<li><a href="../index.html">Agenda</a></li>
+			<li><a href="grupos.html">Grupos</a></li>
+		</ul>
+	</nav>	
+	<div class="page" >
+		<div> 
+			<h1>Grupo</h1>
+		</div>
+		<form class="form">
+		  <div class="section">
+		    <div class="control-group">
+		    	<div id="id-edicao" hidden>
+        			<input class="campo-formulario" type="text" name="idGrupo" id="idGrupo" disabled>
+      			</div>
+		      <label class="control-label">Nome</label>
+		      <input type="text" class="control" id="nomeGrupo" required/>
+		      <span hidden id="errorNomeGrupo" class="validaCampo">Campo obrigatório</span>
+		    </div>
+		  </div>		
+		  <div class="section">	    
+		    <div class="control-group btnSalvar">
+		    	<button type="button" class="btn btn-success" id="btnSalvar" onclick="novoGrupo()">Cadastrar</button>
+		    	<button type="button" class="btn btn-success" hidden id="btnEditar" onclick="editarGrupo()">Editar</button>
+		    </div>
+		  </div>
+		</form>
+	</div>
+  	<script src="../resources/js/script.js"></script>
+</body>
+
+</html>
